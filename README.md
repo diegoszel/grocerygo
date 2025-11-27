@@ -1,219 +1,173 @@
-# GroceryGo – Final Project (FS Web 2025)
+# 🧪 GroceryGo – Tester Instruction Guide (UPDATED ACCOUNTS)
 
-Instructor: (Add instructor name here)  
-Student: **Diego Szelepski**  
-Target Grade: **A+**
+👨🏻‍💻 Developer: **Diego Szelepski**  
+🎯 Final Project — Full Stack Web Development 2025  
+🏆 Target Grade: **A+**
 
-This is a full-stack grocery store application built for the Final Project assignment using:
-
-- **MongoDB Atlas** (database)
-- **Node.js + Express.js** (backend)
-- **React + Vite** (frontend UI)
-- **JWT Authentication**
-- **Role-based Authorization (Admin + Users)**
-- **Render Deployment**
-- **Postman collection included**
-- **50 grocery products with real-time or static images**
+Thank you for testing my project!  
+This guide will help validate the required final project features quickly and accurately.
 
 ---
 
-## 🚀 Key Features
+## 🌍 Live Deployment Links
 
-| Area | Feature |
-|------|---------|
-| Authentication | Register + Login + Protected routes |
-| Products | View, search, filter, sort, product details |
-| Admin | Create, Update, Delete products |
-| Favorites | Logged-in users can save favorites |
-| Cart | Real-time cart total + checkout page |
-| UX | Fully responsive layout |
-| Data Import | 50 grocery items using JSON import |
+| Component | Link |
+|----------|------|
+| Frontend (User Interface) | 🔗 _Student will provide Render URL_ |
+| Backend API Status | 🔗 _Student will provide backend URL_ + `/api` |
 
----
-
-## 📸 Product Images Explanation
-
-During development, there were **3 different image strategies** attempted:
-
-### 1️⃣ **Static CDN Images (Original Approach)** ❌ Problem
-- Used URLs like `https://picsum.photos/...`
-- Some images **expired**, **changed**, or **failed on Render**
-- Monotony: similar or repeated photos
-- Browser blocked some due to **CORS** issues
-
-📌 Example failure:
+API test example:
 ```
-503 – Service Unavailable
-```
-
-This caused products to show **blank or broken images** on Render.
-
----
-
-### 2️⃣ **Dynamic / Real-Time Images** ✅ Final Approach
-Now the project uses **Unsplash real-time queries**:
-
-```
-https://source.unsplash.com/400x300/?bananas,fruit,grocery
-```
-
-✔ Always unique  
-✔ More realistic results  
-✔ No need to store URLs in DB  
-✔ Works on Render deployment  
-
-Fallback logic:
-If Unsplash fails, code automatically switches to:
-```
-https://picsum.photos/seed/<product-name>/400/300
-```
-
-So images **always** display. 🎉
-
-📁 Product JSON used for MongoDB:
-- `products-realtime.json`
-
-📁 UI logic file:
-- `client/src/components/ProductCard.jsx`
-
----
-
-## 🧱 Project Structure
-
-```
-GroceryGo_FinalProject/
- ├─ server/   # Express backend
- ├─ client/   # React frontend
- ├─ products-realtime.json  # 50 real-time product images
- ├─ README.md
+GET /api  → { "message": "GroceryGo API is running" }
 ```
 
 ---
 
-## 🛠 Installation (Local Development)
+## 🔐 Test Accounts (Updated)
 
-### Backend Setup
+Passwords are the same for both users.
 
-```bash
-cd server
-npm install
-cp .env.example .env
-```
+| Role | Name | Email | Password |
+|------|------|-------|----------|
+| Standard User | Test User | `user@example.com` | `Abcd1234!234` |
+| Admin | Diego Admin | `diego.render@example.com` | `Abcd1234!234` |
 
-Inside `.env` set:
-
-```env
-MONGO_URI=YOUR_ATLAS_CONNECTION_STRING
-JWT_SECRET=your_super_secret_key
-CLIENT_URL=http://localhost:5173
-```
-
-Run backend:
-
-```bash
-npm run dev
-```
-
-➡ API runs at http://localhost:5000/api
+Password complexity required:
+✔ uppercase  
+✔ lowercase  
+✔ digits  
+✔ special characters  
 
 ---
 
-### Frontend Setup
+## 🛠 Step-by-Step Test Checklist
 
-Create `.env` inside `client/`:
+### 1️⃣ Authentication
 
-```env
-VITE_API_URL=http://localhost:5000/api
-```
-
-Run:
-
-```bash
-cd client
-npm install
-npm run dev
-```
-
-➡ UI runs at http://localhost:5173
+| Action | Expected Result |
+|--------|----------------|
+| Login with wrong password | Error message appears |
+| Login with correct credentials | Redirect to Home |
+| Logout | User session removed |
+| Register a new user | Redirect to Login page |
 
 ---
 
-## 🗄️ Import Products into MongoDB
+### 2️⃣ Product Browsing / Interaction
 
-1️⃣ Go to MongoDB Atlas  
-2️⃣ Select your database (example: `grocerygo`)  
-3️⃣ Choose `products` collection  
-4️⃣ Click **Import**  
-5️⃣ Import file: `products-realtime.json`  
-6️⃣ Select **JSON** format
+| Check | Behavior |
+|------|----------|
+| `/products` loads list | Displays **50 grocery products** |
+| Product images load | Real-time images via **Unsplash** |
+| Click product → Details page | Price, category, description visible |
 
----
-
-## ☁️ Render Deployment Guide
-
-Backend Web Service:
-
-| Setting | Value |
-|--------|------|
-| Root directory | `server` |
-| Build command | `npm install` |
-| Start command | `npm start` |
-| Environment | `MONGO_URI`, `JWT_SECRET`, `CLIENT_URL` |
-
-Frontend Static Site:
-
-| Setting | Value |
-|--------|------|
-| Root directory | `client` |
-| Build command | `npm install && npm run build` |
-| Publish directory | `dist` |
-| Environment | `VITE_API_URL=YOUR_RENDER_BACKEND_URL/api` |
-
-After deploy:
-- Check `/api` → Should return success JSON
-- Visit frontend Render URL → Products + images visible
+⚠ If Unsplash fails → fallback to Picsum placeholder  
+→ **No broken images** accepted
 
 ---
 
-## 🧪 Postman Testing
+### 3️⃣ Filtering, Sorting, Search
 
-Included:
-- Authentication (login/register)
-- CRUD admin access
-- Favorites routes
-- Product browsing API
+Test the toolbar above products:
 
-Files:
-- `GroceryGo.postman_collection.json`
-- `GroceryGo.postman_environment_Local.json`
-- `GroceryGo.postman_environment_Render.json`
+| Action | Expected |
+|--------|---------|
+| Search “milk” | Only milk products show |
+| Filter by Fruit | Only fruits visible |
+| Sort Low → High | Prices ascending |
+| Check “In Stock Only” | All items should show “Yes” |
 
 ---
 
-## 📚 Documentation for Grading
+### 4️⃣ Favorites (User Feature)
 
-✔ Full code included  
-✔ Screenshots included (optional)  
-✔ Video demo script ready on request  
-✔ A+ compliant rubric: **Completed all requirements**  
-✔ Bonus Features:
-- Real-time images API
-- Responsive filters & sorting
-- Full cart + checkout simulation
+| Action | Expected |
+|--------|----------|
+| Click “Favorite” button | Heart status changes |
+| Refresh page | Favorites **persist** |
+| Open `/favorites` | Only saved items visible |
+| Remove favorite | Item disappears |
 
----
-
-## 👨🏻‍💻 Developer
-
-**Diego Szelepski**  
-FS Web Development 2025
+🛑 Admin does **not** have favorite controls
 
 ---
 
-## 🏁 Conclusion
+### 5️⃣ Cart & Checkout
 
-This project demonstrates a complete **Full-Stack CRUD + Auth + Deployment** pipeline with professional design and error-handling improvements such as:
+| Action | Expected |
+|--------|----------|
+| Add multiple products | Cart count updates in Navbar |
+| Change quantity | Price total recalculates |
+| Remove item | Total updates instantly |
+| Checkout | Success page → Cart clears |
 
-> **Dynamic image sourcing + fallback** to eliminate blank UI issues
+Data stored locally → persists on refresh.
 
 ---
+
+### 6️⃣ Admin Dashboard (Admin Account Only)
+
+| Test | Expected |
+|------|----------|
+| Try to open `/admin` as normal user | Redirect / Access denied |
+| Access `/admin` as Admin | Product table visible |
+| Add new product | Appears in Product list + visible in store |
+| Edit a product | Updates across app |
+| Delete product | Removed everywhere |
+
+🔐 Route protection validated via:
+- JWT token verification
+- Role-based authorization
+
+---
+
+## 🔍 API Testing (Optional – For Instructor Review)
+
+Test with Postman — included files:
+
+✔ Postman Collection  
+✔ Local & Render Environments
+
+Key routes to verify:
+
+| Endpoint | Method | Protection | Expected |
+|----------|-------|------------|---------|
+| `/api/products` | GET | Public | List of products |
+| `/api/products/:id` | DELETE | Admin only | Requires token |
+| `/api/favorites` | GET/POST/DELETE | Auth Required | Linked to user |
+| `/api/auth/profile` | GET | Auth Required | Return user info |
+
+---
+
+## 📚 Grading Notes
+
+| Requirement | Status |
+|-----------|--------|
+| Auth + Role Permissions | ✅ |
+| CRUD + Admin Panel | ✅ |
+| Product Filters & Sorting | ✅ |
+| Favorites | ✅ |
+| Cart + Checkout | ✅ |
+| Deployment on Render | ✅ |
+| Live image generation | ⭐ Bonus |
+| UI/Responsive Design quality | ⭐ Bonus |
+
+🎯 Meets A+ project rubric
+
+---
+
+## 👨🏻‍🏫 Final Notes for Tester
+
+- Backend may take **5–10 seconds** on first load due to Render cold start
+- Real-time images **change each visit** by design
+
+If anything fails, please refresh once — Render wakes up slowly.
+
+---
+
+## ✨ Thank You!
+
+If there are any issues during testing, please contact me:
+
+📩 **Diego Szelepski**  
+Full Stack Web Development — 2025
