@@ -4,6 +4,19 @@ import api from "../api";
 import { useAuth } from "../context/AuthContext";
 import { useCart } from "../context/CartContext";
 
+const buildImageUrl = (product) => {
+  if (!product) return "";
+  if (product.imageUrl && product.imageUrl.startsWith("http")) {
+    return product.imageUrl;
+  }
+  const queryParts = [product.name, product.category, "grocery", "food"]
+    .filter(Boolean)
+    .join(",");
+  return `https://source.unsplash.com/600x400/?${encodeURIComponent(
+    queryParts
+  )}`;
+};
+
 const ProductDetails = () => {
   const { id } = useParams();
   const { user } = useAuth();
@@ -44,7 +57,8 @@ const ProductDetails = () => {
 
   const handleImageError = (e) => {
     e.target.onerror = null;
-    e.target.src = "https://picsum.photos/seed/fallbackdetails/600/400";
+    const seed = encodeURIComponent(product?.name || "fallbackdetails");
+    e.target.src = `https://picsum.photos/seed/${seed}/600/400`;
   };
 
   if (!product) return <section className="page">Loading...</section>;
@@ -52,7 +66,7 @@ const ProductDetails = () => {
   return (
     <section className="page product-details">
       <img
-        src={product.imageUrl}
+        src={buildImageUrl(product)}
         alt={product.name}
         onError={handleImageError}
       />

@@ -1,15 +1,33 @@
 import { Link } from "react-router-dom";
 
+const buildImageUrl = (product) => {
+  // If DB already has a full URL, use it
+  if (product.imageUrl && product.imageUrl.startsWith("http")) {
+    return product.imageUrl;
+  }
+
+  // Otherwise build a "real-time" Unsplash URL from name + category
+  const queryParts = [product.name, product.category, "grocery", "food"]
+    .filter(Boolean)
+    .join(",");
+
+  return `https://source.unsplash.com/400x300/?${encodeURIComponent(
+    queryParts
+  )}`;
+};
+
 const ProductCard = ({ product, onFavorite, isFavorite, onAddToCart }) => {
   const handleImageError = (e) => {
+    // If Unsplash fails, fall back to a stable placeholder
     e.target.onerror = null;
-    e.target.src = "https://picsum.photos/seed/fallback/400/300";
+    const seed = encodeURIComponent(product.name || "fallback");
+    e.target.src = `https://picsum.photos/seed/${seed}/400/300`;
   };
 
   return (
     <div className="product-card">
       <img
-        src={product.imageUrl}
+        src={buildImageUrl(product)}
         alt={product.name}
         onError={handleImageError}
       />
