@@ -2,7 +2,7 @@
   {
     "name": "Bananas",
     "description": "Fresh ripe bananas, sweet and perfect for smoothies.",
-    "imageUrl": "https://picsum.photos/seed/bananas/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?bananas,fruit",
     "price": 1.29,
     "category": "Fruit",
     "inStock": true,
@@ -11,7 +11,7 @@
   {
     "name": "Red Apples",
     "description": "Juicy red apples high in vitamins.",
-    "imageUrl": "https://picsum.photos/seed/redapples/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?red-apples,fruit",
     "price": 2.49,
     "category": "Fruit",
     "inStock": true,
@@ -20,7 +20,7 @@
   {
     "name": "Green Apples",
     "description": "Tart and crisp green apples.",
-    "imageUrl": "https://picsum.photos/seed/greenapples/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?green-apples,fruit",
     "price": 2.39,
     "category": "Fruit",
     "inStock": true,
@@ -29,7 +29,7 @@
   {
     "name": "Green Grapes",
     "description": "Sweet seedless green grapes.",
-    "imageUrl": "https://picsum.photos/seed/greengrapes/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?green-grapes,fruit",
     "price": 3.99,
     "category": "Fruit",
     "inStock": true,
@@ -38,7 +38,7 @@
   {
     "name": "Red Grapes",
     "description": "Red grapes, great for healthy snacks.",
-    "imageUrl": "https://picsum.photos/seed/redgrapes/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?red-grapes,fruit",
     "price": 4.19,
     "category": "Fruit",
     "inStock": true,
@@ -47,7 +47,7 @@
   {
     "name": "Strawberries",
     "description": "Fresh strawberries, perfect for desserts.",
-    "imageUrl": "https://picsum.photos/seed/strawberries/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?strawberries",
     "price": 4.49,
     "category": "Fruit",
     "inStock": true,
@@ -56,7 +56,7 @@
   {
     "name": "Blueberries",
     "description": "Antioxidant rich blueberries.",
-    "imageUrl": "https://picsum.photos/seed/blueberries/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?blueberries,fruit",
     "price": 5.29,
     "category": "Fruit",
     "inStock": true,
@@ -65,7 +65,7 @@
   {
     "name": "Oranges",
     "description": "Fresh oranges full of vitamin C.",
-    "imageUrl": "https://picsum.photos/seed/oranges/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?oranges,fruit",
     "price": 2.99,
     "category": "Fruit",
     "inStock": true,
@@ -74,7 +74,7 @@
   {
     "name": "Tomatoes",
     "description": "Juicy tomatoes perfect for salads and sandwiches.",
-    "imageUrl": "https://picsum.photos/seed/tomatoes/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?tomatoes",
     "price": 2.19,
     "category": "Vegetables",
     "inStock": true,
@@ -83,7 +83,7 @@
   {
     "name": "Cucumbers",
     "description": "Crisp cucumbers.",
-    "imageUrl": "https://picsum.photos/seed/cucumbers/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?cucumber",
     "price": 1.59,
     "category": "Vegetables",
     "inStock": true,
@@ -92,7 +92,7 @@
   {
     "name": "Carrots",
     "description": "Crunchy and fresh carrots.",
-    "imageUrl": "https://picsum.photos/seed/carrots/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?carrots",
     "price": 1.99,
     "category": "Vegetables",
     "inStock": true,
@@ -101,7 +101,7 @@
   {
     "name": "Broccoli",
     "description": "Healthy green broccoli florets.",
-    "imageUrl": "https://picsum.photos/seed/broccoli/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?broccoli",
     "price": 2.79,
     "category": "Vegetables",
     "inStock": true,
@@ -110,7 +110,7 @@
   {
     "name": "Lettuce",
     "description": "Fresh lettuce heads.",
-    "imageUrl": "https://picsum.photos/seed/lettuce/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?lettuce",
     "price": 1.49,
     "category": "Vegetables",
     "inStock": true,
@@ -119,7 +119,7 @@
   {
     "name": "Bell Peppers",
     "description": "Colorful assorted bell peppers.",
-    "imageUrl": "https://picsum.photos/seed/bellpeppers/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?bell-pepper",
     "price": 3.29,
     "category": "Vegetables",
     "inStock": true,
@@ -128,7 +128,7 @@
   {
     "name": "Avocados",
     "description": "Perfectly ripe avocados.",
-    "imageUrl": "https://picsum.photos/seed/avocados/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?avocado",
     "price": 2.99,
     "category": "Vegetables",
     "inStock": true,
@@ -137,7 +137,7 @@
   {
     "name": "Whole Milk 1L",
     "description": "Rich whole milk, 1 liter.",
-    "imageUrl": "https://picsum.photos/seed/milk/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?milk",
     "price": 1.49,
     "category": "Dairy",
     "inStock": true,
@@ -146,7 +146,7 @@
   {
     "name": "Skim Milk 1L",
     "description": "Low-fat skim milk.",
-    "imageUrl": "https://picsum.photos/seed/skimmilk/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?skim-milk",
     "price": 1.39,
     "category": "Dairy",
     "inStock": true,
@@ -155,7 +155,7 @@
   {
     "name": "Cheddar Cheese",
     "description": "Sharp cheddar cheese block.",
-    "imageUrl": "https://picsum.photos/seed/cheddar/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?cheddar-cheese",
     "price": 3.99,
     "category": "Dairy",
     "inStock": true,
@@ -164,7 +164,7 @@
   {
     "name": "Mozzarella Cheese",
     "description": "Soft mozzarella cheese block.",
-    "imageUrl": "https://picsum.photos/seed/mozzarella/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?mozzarella-cheese",
     "price": 4.29,
     "category": "Dairy",
     "inStock": true,
@@ -173,7 +173,7 @@
   {
     "name": "Greek Yogurt",
     "description": "Thick and creamy Greek yogurt.",
-    "imageUrl": "https://picsum.photos/seed/yogurt/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?greek-yogurt",
     "price": 2.89,
     "category": "Dairy",
     "inStock": true,
@@ -182,7 +182,7 @@
   {
     "name": "Butter",
     "description": "Salted butter stick.",
-    "imageUrl": "https://picsum.photos/seed/butter/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?butter",
     "price": 2.49,
     "category": "Dairy",
     "inStock": true,
@@ -191,7 +191,7 @@
   {
     "name": "Orange Juice 1L",
     "description": "100% fresh orange juice.",
-    "imageUrl": "https://picsum.photos/seed/orangejuice/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?orange-juice",
     "price": 2.29,
     "category": "Drinks",
     "inStock": true,
@@ -200,7 +200,7 @@
   {
     "name": "Apple Juice 1L",
     "description": "Refreshing apple juice bottle.",
-    "imageUrl": "https://picsum.photos/seed/applejuice/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?apple-juice",
     "price": 2.19,
     "category": "Drinks",
     "inStock": true,
@@ -209,7 +209,7 @@
   {
     "name": "Cola Drink 1.5L",
     "description": "Classic cola soft drink.",
-    "imageUrl": "https://picsum.photos/seed/cola/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?cola-drink",
     "price": 1.99,
     "category": "Drinks",
     "inStock": true,
@@ -218,7 +218,7 @@
   {
     "name": "Mineral Water 1.5L",
     "description": "Purified mineral water.",
-    "imageUrl": "https://picsum.photos/seed/water/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?water-bottle",
     "price": 0.99,
     "category": "Drinks",
     "inStock": true,
@@ -227,7 +227,7 @@
   {
     "name": "Sparkling Water 1L",
     "description": "Refreshing sparkling water.",
-    "imageUrl": "https://picsum.photos/seed/sparkling/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?sparkling-water",
     "price": 1.19,
     "category": "Drinks",
     "inStock": true,
@@ -236,7 +236,7 @@
   {
     "name": "Salted Potato Chips",
     "description": "Crunchy salted potato chips.",
-    "imageUrl": "https://picsum.photos/seed/chips/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?chips",
     "price": 2.49,
     "category": "Snacks",
     "inStock": true,
@@ -245,7 +245,7 @@
   {
     "name": "Chocolate Bar",
     "description": "Delicious milk chocolate bar.",
-    "imageUrl": "https://picsum.photos/seed/chocolate/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?chocolate-bar",
     "price": 1.29,
     "category": "Snacks",
     "inStock": true,
@@ -254,7 +254,7 @@
   {
     "name": "Granola Bars (Box of 6)",
     "description": "Assorted flavors granola bars.",
-    "imageUrl": "https://picsum.photos/seed/granola/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?granola",
     "price": 3.49,
     "category": "Snacks",
     "inStock": true,
@@ -263,7 +263,7 @@
   {
     "name": "Pretzels",
     "description": "Salty crunchy pretzels.",
-    "imageUrl": "https://picsum.photos/seed/pretzels/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?pretzels",
     "price": 2.19,
     "category": "Snacks",
     "inStock": true,
@@ -272,7 +272,7 @@
   {
     "name": "Popcorn (Microwave)",
     "description": "Classic butter popcorn.",
-    "imageUrl": "https://picsum.photos/seed/popcorn/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?popcorn",
     "price": 1.79,
     "category": "Snacks",
     "inStock": true,
@@ -281,7 +281,7 @@
   {
     "name": "Spaghetti Pasta 500g",
     "description": "High-quality spaghetti.",
-    "imageUrl": "https://picsum.photos/seed/spaghetti/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?spaghetti",
     "price": 1.39,
     "category": "Pantry",
     "inStock": true,
@@ -290,7 +290,7 @@
   {
     "name": "Penne Pasta 500g",
     "description": "Italian penne pasta.",
-    "imageUrl": "https://picsum.photos/seed/penne/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?penne-pasta",
     "price": 1.49,
     "category": "Pantry",
     "inStock": true,
@@ -299,7 +299,7 @@
   {
     "name": "Tomato Pasta Sauce",
     "description": "Tomato & basil pasta sauce.",
-    "imageUrl": "https://picsum.photos/seed/pastasauce/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?tomato-sauce",
     "price": 2.19,
     "category": "Pantry",
     "inStock": true,
@@ -308,7 +308,7 @@
   {
     "name": "Peanut Butter",
     "description": "Creamy peanut butter jar.",
-    "imageUrl": "https://picsum.photos/seed/peanutbutter/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?peanut-butter",
     "price": 3.79,
     "category": "Pantry",
     "inStock": true,
@@ -317,7 +317,7 @@
   {
     "name": "Strawberry Jam",
     "description": "Fruit jam spread.",
-    "imageUrl": "https://picsum.photos/seed/jam/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?strawberry-jam",
     "price": 2.99,
     "category": "Pantry",
     "inStock": true,
@@ -326,7 +326,7 @@
   {
     "name": "Beef Ground Meat 500g",
     "description": "Fresh ground beef for cooking.",
-    "imageUrl": "https://picsum.photos/seed/beef/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?ground-beef",
     "price": 6.99,
     "category": "Meat",
     "inStock": true,
@@ -335,7 +335,7 @@
   {
     "name": "Chicken Breast 1kg",
     "description": "Lean chicken breast fillets.",
-    "imageUrl": "https://picsum.photos/seed/chicken/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?chicken",
     "price": 7.49,
     "category": "Meat",
     "inStock": true,
@@ -344,7 +344,7 @@
   {
     "name": "Turkey Slices 200g",
     "description": "Sliced turkey for sandwiches.",
-    "imageUrl": "https://picsum.photos/seed/turkey/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?turkey-meat",
     "price": 4.59,
     "category": "Meat",
     "inStock": true,
@@ -353,7 +353,7 @@
   {
     "name": "Salmon Fillet 300g",
     "description": "Premium Atlantic salmon.",
-    "imageUrl": "https://picsum.photos/seed/salmon/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?salmon",
     "price": 8.99,
     "category": "Seafood",
     "inStock": true,
@@ -362,7 +362,7 @@
   {
     "name": "Shrimp 400g",
     "description": "Fresh and cleaned shrimps.",
-    "imageUrl": "https://picsum.photos/seed/shrimp/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?shrimp",
     "price": 7.99,
     "category": "Seafood",
     "inStock": true,
@@ -371,7 +371,7 @@
   {
     "name": "Tuna Cans (Pack of 4)",
     "description": "Tuna chunks in water.",
-    "imageUrl": "https://picsum.photos/seed/tuna/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?tuna-cans",
     "price": 5.49,
     "category": "Seafood",
     "inStock": true,
@@ -380,7 +380,7 @@
   {
     "name": "Eggs (12 pcs)",
     "description": "Farm fresh grade A eggs.",
-    "imageUrl": "https://picsum.photos/seed/eggs/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?eggs",
     "price": 3.29,
     "category": "Pantry",
     "inStock": true,
@@ -389,7 +389,7 @@
   {
     "name": "Cereal Corn Flakes",
     "description": "Crunchy breakfast cereal.",
-    "imageUrl": "https://picsum.photos/seed/cornflakes/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?cornflakes",
     "price": 3.39,
     "category": "Pantry",
     "inStock": true,
@@ -398,7 +398,7 @@
   {
     "name": "Rice 1kg",
     "description": "White long grain rice.",
-    "imageUrl": "https://picsum.photos/seed/rice/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?rice-grains",
     "price": 2.49,
     "category": "Pantry",
     "inStock": true,
@@ -406,8 +406,8 @@
   },
   {
     "name": "Ground Coffee",
-     "description": "Premium roasted coffee.",
-    "imageUrl": "https://picsum.photos/seed/coffee/400/300",
+    "description": "Premium roasted coffee.",
+    "imageUrl": "https://source.unsplash.com/featured/?coffee",
     "price": 5.99,
     "category": "Pantry",
     "inStock": true,
@@ -416,7 +416,7 @@
   {
     "name": "Tea Bags (50 count)",
     "description": "Black tea bags, rich flavor.",
-    "imageUrl": "https://picsum.photos/seed/tea/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?tea",
     "price": 2.99,
     "category": "Pantry",
     "inStock": true,
@@ -425,7 +425,7 @@
   {
     "name": "Sugar 1kg",
     "description": "Pure white sugar bag.",
-    "imageUrl": "https://picsum.photos/seed/sugar/400/300",
+    "imageUrl": "https://source.unsplash.com/featured/?sugar",
     "price": 1.89,
     "category": "Pantry",
     "inStock": true,
