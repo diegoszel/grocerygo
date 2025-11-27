@@ -1,0 +1,4 @@
+touch .gitignore
+
+# Dependencies
+/node_modules
