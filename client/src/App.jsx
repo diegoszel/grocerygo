@@ -10,6 +10,8 @@ import ProductDetails from "./pages/ProductDetails";
 import Favorites from "./pages/Favorites";
 import AdminDashboard from "./pages/AdminDashboard";
 import AdminProductForm from "./pages/AdminProductForm";
+import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
 import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
@@ -53,6 +55,15 @@ function App() {
             element={
               <ProtectedRoute adminOnly>
                 <AdminProductForm />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/cart" element={<Cart />} />
+          <Route
+            path="/checkout"
+            element={
+              <ProtectedRoute>
+                <Checkout />
               </ProtectedRoute>
             }
           />

@@ -8,31 +8,39 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-    if (token) {
+    const userJson = localStorage.getItem("user");
+    if (token && userJson) {
       try {
         const decoded = jwtDecode(token);
-        setUser({ id: decoded.id, name: decoded.name, role: decoded.role });
+        if (decoded.exp * 1000 > Date.now()) {
+          setUser(JSON.parse(userJson));
+        } else {
+          localStorage.removeItem("token");
+          localStorage.removeItem("user");
+        }
       } catch {
         localStorage.removeItem("token");
+        localStorage.removeItem("user");
       }
     }
   }, []);
 
-  const login = (token) => {
+  const login = (token, userData) => {
     localStorage.setItem("token", token);
-    const decoded = jwtDecode(token);
-    setUser({ id: decoded.id, name: decoded.name, role: decoded.role });
+    localStorage.setItem("user", JSON.stringify(userData));
+    setUser(userData);
   };
 
   const logout = () => {
     localStorage.removeItem("token");
+    localStorage.removeItem("user");
     setUser(null);
   };
 
+  const isAdmin = user?.role === "admin";
+
   return (
-    <AuthContext.Provider
-      value={{ user, isAdmin: user?.role === "admin", login, logout }}
-    >
+    <AuthContext.Provider value={{ user, login, logout, isAdmin }}>
       {children}
     </AuthContext.Provider>
   );

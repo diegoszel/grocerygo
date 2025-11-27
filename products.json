@@ -1,0 +1,434 @@
+[
+  {
+    "name": "Bananas",
+    "description": "Fresh ripe bananas, sweet and perfect for smoothies.",
+    "imageUrl": "https://picsum.photos/seed/bananas/400/300",
+    "price": 1.29,
+    "category": "Fruit",
+    "inStock": true,
+    "stockQty": 120
+  },
+  {
+    "name": "Red Apples",
+    "description": "Juicy red apples high in vitamins.",
+    "imageUrl": "https://picsum.photos/seed/redapples/400/300",
+    "price": 2.49,
+    "category": "Fruit",
+    "inStock": true,
+    "stockQty": 80
+  },
+  {
+    "name": "Green Apples",
+    "description": "Tart and crisp green apples.",
+    "imageUrl": "https://picsum.photos/seed/greenapples/400/300",
+    "price": 2.39,
+    "category": "Fruit",
+    "inStock": true,
+    "stockQty": 75
+  },
+  {
+    "name": "Green Grapes",
+    "description": "Sweet seedless green grapes.",
+    "imageUrl": "https://picsum.photos/seed/greengrapes/400/300",
+    "price": 3.99,
+    "category": "Fruit",
+    "inStock": true,
+    "stockQty": 60
+  },
+  {
+    "name": "Red Grapes",
+    "description": "Red grapes, great for healthy snacks.",
+    "imageUrl": "https://picsum.photos/seed/redgrapes/400/300",
+    "price": 4.19,
+    "category": "Fruit",
+    "inStock": true,
+    "stockQty": 65
+  },
+  {
+    "name": "Strawberries",
+    "description": "Fresh strawberries, perfect for desserts.",
+    "imageUrl": "https://picsum.photos/seed/strawberries/400/300",
+    "price": 4.49,
+    "category": "Fruit",
+    "inStock": true,
+    "stockQty": 50
+  },
+  {
+    "name": "Blueberries",
+    "description": "Antioxidant rich blueberries.",
+    "imageUrl": "https://picsum.photos/seed/blueberries/400/300",
+    "price": 5.29,
+    "category": "Fruit",
+    "inStock": true,
+    "stockQty": 45
+  },
+  {
+    "name": "Oranges",
+    "description": "Fresh oranges full of vitamin C.",
+    "imageUrl": "https://picsum.photos/seed/oranges/400/300",
+    "price": 2.99,
+    "category": "Fruit",
+    "inStock": true,
+    "stockQty": 85
+  },
+  {
+    "name": "Tomatoes",
+    "description": "Juicy tomatoes perfect for salads and sandwiches.",
+    "imageUrl": "https://picsum.photos/seed/tomatoes/400/300",
+    "price": 2.19,
+    "category": "Vegetables",
+    "inStock": true,
+    "stockQty": 90
+  },
+  {
+    "name": "Cucumbers",
+    "description": "Crisp cucumbers.",
+    "imageUrl": "https://picsum.photos/seed/cucumbers/400/300",
+    "price": 1.59,
+    "category": "Vegetables",
+    "inStock": true,
+    "stockQty": 70
+  },
+  {
+    "name": "Carrots",
+    "description": "Crunchy and fresh carrots.",
+    "imageUrl": "https://picsum.photos/seed/carrots/400/300",
+    "price": 1.99,
+    "category": "Vegetables",
+    "inStock": true,
+    "stockQty": 100
+  },
+  {
+    "name": "Broccoli",
+    "description": "Healthy green broccoli florets.",
+    "imageUrl": "https://picsum.photos/seed/broccoli/400/300",
+    "price": 2.79,
+    "category": "Vegetables",
+    "inStock": true,
+    "stockQty": 60
+  },
+  {
+    "name": "Lettuce",
+    "description": "Fresh lettuce heads.",
+    "imageUrl": "https://picsum.photos/seed/lettuce/400/300",
+    "price": 1.49,
+    "category": "Vegetables",
+    "inStock": true,
+    "stockQty": 55
+  },
+  {
+    "name": "Bell Peppers",
+    "description": "Colorful assorted bell peppers.",
+    "imageUrl": "https://picsum.photos/seed/bellpeppers/400/300",
+    "price": 3.29,
+    "category": "Vegetables",
+    "inStock": true,
+    "stockQty": 65
+  },
+  {
+    "name": "Avocados",
+    "description": "Perfectly ripe avocados.",
+    "imageUrl": "https://picsum.photos/seed/avocados/400/300",
+    "price": 2.99,
+    "category": "Vegetables",
+    "inStock": true,
+    "stockQty": 75
+  },
+  {
+    "name": "Whole Milk 1L",
+    "description": "Rich whole milk, 1 liter.",
+    "imageUrl": "https://picsum.photos/seed/milk/400/300",
+    "price": 1.49,
+    "category": "Dairy",
+    "inStock": true,
+    "stockQty": 150
+  },
+  {
+    "name": "Skim Milk 1L",
+    "description": "Low-fat skim milk.",
+    "imageUrl": "https://picsum.photos/seed/skimmilk/400/300",
+    "price": 1.39,
+    "category": "Dairy",
+    "inStock": true,
+    "stockQty": 140
+  },
+  {
+    "name": "Cheddar Cheese",
+    "description": "Sharp cheddar cheese block.",
+    "imageUrl": "https://picsum.photos/seed/cheddar/400/300",
+    "price": 3.99,
+    "category": "Dairy",
+    "inStock": true,
+    "stockQty": 40
+  },
+  {
+    "name": "Mozzarella Cheese",
+    "description": "Soft mozzarella cheese block.",
+    "imageUrl": "https://picsum.photos/seed/mozzarella/400/300",
+    "price": 4.29,
+    "category": "Dairy",
+    "inStock": true,
+    "stockQty": 45
+  },
+  {
+    "name": "Greek Yogurt",
+    "description": "Thick and creamy Greek yogurt.",
+    "imageUrl": "https://picsum.photos/seed/yogurt/400/300",
+    "price": 2.89,
+    "category": "Dairy",
+    "inStock": true,
+    "stockQty": 55
+  },
+  {
+    "name": "Butter",
+    "description": "Salted butter stick.",
+    "imageUrl": "https://picsum.photos/seed/butter/400/300",
+    "price": 2.49,
+    "category": "Dairy",
+    "inStock": true,
+    "stockQty": 70
+  },
+  {
+    "name": "Orange Juice 1L",
+    "description": "100% fresh orange juice.",
+    "imageUrl": "https://picsum.photos/seed/orangejuice/400/300",
+    "price": 2.29,
+    "category": "Drinks",
+    "inStock": true,
+    "stockQty": 90
+  },
+  {
+    "name": "Apple Juice 1L",
+    "description": "Refreshing apple juice bottle.",
+    "imageUrl": "https://picsum.photos/seed/applejuice/400/300",
+    "price": 2.19,
+    "category": "Drinks",
+    "inStock": true,
+    "stockQty": 88
+  },
+  {
+    "name": "Cola Drink 1.5L",
+    "description": "Classic cola soft drink.",
+    "imageUrl": "https://picsum.photos/seed/cola/400/300",
+    "price": 1.99,
+    "category": "Drinks",
+    "inStock": true,
+    "stockQty": 110
+  },
+  {
+    "name": "Mineral Water 1.5L",
+    "description": "Purified mineral water.",
+    "imageUrl": "https://picsum.photos/seed/water/400/300",
+    "price": 0.99,
+    "category": "Drinks",
+    "inStock": true,
+    "stockQty": 200
+  },
+  {
+    "name": "Sparkling Water 1L",
+    "description": "Refreshing sparkling water.",
+    "imageUrl": "https://picsum.photos/seed/sparkling/400/300",
+    "price": 1.19,
+    "category": "Drinks",
+    "inStock": true,
+    "stockQty": 170
+  },
+  {
+    "name": "Salted Potato Chips",
+    "description": "Crunchy salted potato chips.",
+    "imageUrl": "https://picsum.photos/seed/chips/400/300",
+    "price": 2.49,
+    "category": "Snacks",
+    "inStock": true,
+    "stockQty": 120
+  },
+  {
+    "name": "Chocolate Bar",
+    "description": "Delicious milk chocolate bar.",
+    "imageUrl": "https://picsum.photos/seed/chocolate/400/300",
+    "price": 1.29,
+    "category": "Snacks",
+    "inStock": true,
+    "stockQty": 140
+  },
+  {
+    "name": "Granola Bars (Box of 6)",
+    "description": "Assorted flavors granola bars.",
+    "imageUrl": "https://picsum.photos/seed/granola/400/300",
+    "price": 3.49,
+    "category": "Snacks",
+    "inStock": true,
+    "stockQty": 60
+  },
+  {
+    "name": "Pretzels",
+    "description": "Salty crunchy pretzels.",
+    "imageUrl": "https://picsum.photos/seed/pretzels/400/300",
+    "price": 2.19,
+    "category": "Snacks",
+    "inStock": true,
+    "stockQty": 90
+  },
+  {
+    "name": "Popcorn (Microwave)",
+    "description": "Classic butter popcorn.",
+    "imageUrl": "https://picsum.photos/seed/popcorn/400/300",
+    "price": 1.79,
+    "category": "Snacks",
+    "inStock": true,
+    "stockQty": 80
+  },
+  {
+    "name": "Spaghetti Pasta 500g",
+    "description": "High-quality spaghetti.",
+    "imageUrl": "https://picsum.photos/seed/spaghetti/400/300",
+    "price": 1.39,
+    "category": "Pantry",
+    "inStock": true,
+    "stockQty": 130
+  },
+  {
+    "name": "Penne Pasta 500g",
+    "description": "Italian penne pasta.",
+    "imageUrl": "https://picsum.photos/seed/penne/400/300",
+    "price": 1.49,
+    "category": "Pantry",
+    "inStock": true,
+    "stockQty": 120
+  },
+  {
+    "name": "Tomato Pasta Sauce",
+    "description": "Tomato & basil pasta sauce.",
+    "imageUrl": "https://picsum.photos/seed/pastasauce/400/300",
+    "price": 2.19,
+    "category": "Pantry",
+    "inStock": true,
+    "stockQty": 80
+  },
+  {
+    "name": "Peanut Butter",
+    "description": "Creamy peanut butter jar.",
+    "imageUrl": "https://picsum.photos/seed/peanutbutter/400/300",
+    "price": 3.79,
+    "category": "Pantry",
+    "inStock": true,
+    "stockQty": 75
+  },
+  {
+    "name": "Strawberry Jam",
+    "description": "Fruit jam spread.",
+    "imageUrl": "https://picsum.photos/seed/jam/400/300",
+    "price": 2.99,
+    "category": "Pantry",
+    "inStock": true,
+    "stockQty": 70
+  },
+  {
+    "name": "Beef Ground Meat 500g",
+    "description": "Fresh ground beef for cooking.",
+    "imageUrl": "https://picsum.photos/seed/beef/400/300",
+    "price": 6.99,
+    "category": "Meat",
+    "inStock": true,
+    "stockQty": 45
+  },
+  {
+    "name": "Chicken Breast 1kg",
+    "description": "Lean chicken breast fillets.",
+    "imageUrl": "https://picsum.photos/seed/chicken/400/300",
+    "price": 7.49,
+    "category": "Meat",
+    "inStock": true,
+    "stockQty": 50
+  },
+  {
+    "name": "Turkey Slices 200g",
+    "description": "Sliced turkey for sandwiches.",
+    "imageUrl": "https://picsum.photos/seed/turkey/400/300",
+    "price": 4.59,
+    "category": "Meat",
+    "inStock": true,
+    "stockQty": 55
+  },
+  {
+    "name": "Salmon Fillet 300g",
+    "description": "Premium Atlantic salmon.",
+    "imageUrl": "https://picsum.photos/seed/salmon/400/300",
+    "price": 8.99,
+    "category": "Seafood",
+    "inStock": true,
+    "stockQty": 35
+  },
+  {
+    "name": "Shrimp 400g",
+    "description": "Fresh and cleaned shrimps.",
+    "imageUrl": "https://picsum.photos/seed/shrimp/400/300",
+    "price": 7.99,
+    "category": "Seafood",
+    "inStock": true,
+    "stockQty": 40
+  },
+  {
+    "name": "Tuna Cans (Pack of 4)",
+    "description": "Tuna chunks in water.",
+    "imageUrl": "https://picsum.photos/seed/tuna/400/300",
+    "price": 5.49,
+    "category": "Seafood",
+    "inStock": true,
+    "stockQty": 65
+  },
+  {
+    "name": "Eggs (12 pcs)",
+    "description": "Farm fresh grade A eggs.",
+    "imageUrl": "https://picsum.photos/seed/eggs/400/300",
+    "price": 3.29,
+    "category": "Pantry",
+    "inStock": true,
+    "stockQty": 105
+  },
+  {
+    "name": "Cereal Corn Flakes",
+    "description": "Crunchy breakfast cereal.",
+    "imageUrl": "https://picsum.photos/seed/cornflakes/400/300",
+    "price": 3.39,
+    "category": "Pantry",
+    "inStock": true,
+    "stockQty": 70
+  },
+  {
+    "name": "Rice 1kg",
+    "description": "White long grain rice.",
+    "imageUrl": "https://picsum.photos/seed/rice/400/300",
+    "price": 2.49,
+    "category": "Pantry",
+    "inStock": true,
+    "stockQty": 90
+  },
+  {
+    "name": "Ground Coffee",
+     "description": "Premium roasted coffee.",
+    "imageUrl": "https://picsum.photos/seed/coffee/400/300",
+    "price": 5.99,
+    "category": "Pantry",
+    "inStock": true,
+    "stockQty": 65
+  },
+  {
+    "name": "Tea Bags (50 count)",
+    "description": "Black tea bags, rich flavor.",
+    "imageUrl": "https://picsum.photos/seed/tea/400/300",
+    "price": 2.99,
+    "category": "Pantry",
+    "inStock": true,
+    "stockQty": 85
+  },
+  {
+    "name": "Sugar 1kg",
+    "description": "Pure white sugar bag.",
+    "imageUrl": "https://picsum.photos/seed/sugar/400/300",
+    "price": 1.89,
+    "category": "Pantry",
+    "inStock": true,
+    "stockQty": 90
+  }
+]

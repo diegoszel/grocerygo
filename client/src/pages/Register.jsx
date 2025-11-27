@@ -2,39 +2,34 @@ import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import api from "../api";
 
-const passwordRegex =
-  /^(?=.*[a-z])(?=.*[A-Z])(?=(?:.*\d){4,})(?=.*[!@%$#^&*\-_()]).{8,}$/;
-
 const Register = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({ name: "", email: "", password: "" });
   const [error, setError] = useState("");
+  const [info, setInfo] = useState(
+    "Password must contain upper, lower, 4 digits, and a symbol."
+  );
 
   const handleChange = (e) => {
-    setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
+    const { name, value } = e.target;
+    setForm((f) => ({ ...f, [name]: value }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
-    if (!passwordRegex.test(form.password)) {
-      setError(
-        "Password must have 8 chars, lowercase, uppercase, 4 digits and a symbol."
-      );
-      return;
-    }
     try {
       await api.post("/auth/register", form);
       navigate("/login");
     } catch (err) {
-      setError(err.response?.data?.message || "Register failed");
+      setError(err.response?.data?.message || "Registration failed");
     }
   };
 
   return (
-    <section className="page auth-page">
+    <section className="page">
       <h1>Register</h1>
-      <form onSubmit={handleSubmit} className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <label>
           Name
           <input
@@ -64,12 +59,13 @@ const Register = () => {
             onChange={handleChange}
           />
         </label>
-        {error && <p className="form-error">{error}</p>}
-        <button type="submit" className="btn-primary">
+        {info && <p className="info">{info}</p>}
+        {error && <p className="error">{error}</p>}
+        <button className="btn-primary" type="submit">
           Register
         </button>
         <p>
-          Already registered? <Link to="/login">Login</Link>
+          Already have an account? <Link to="/login">Login</Link>
         </p>
       </form>
     </section>

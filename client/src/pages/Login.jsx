@@ -10,7 +10,8 @@ const Login = () => {
   const [error, setError] = useState("");
 
   const handleChange = (e) => {
-    setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
+    const { name, value } = e.target;
+    setForm((f) => ({ ...f, [name]: value }));
   };
 
   const handleSubmit = async (e) => {
@@ -18,7 +19,7 @@ const Login = () => {
     setError("");
     try {
       const res = await api.post("/auth/login", form);
-      login(res.data.token);
+      login(res.data.token, res.data.user);
       navigate("/");
     } catch (err) {
       setError(err.response?.data?.message || "Login failed");
@@ -26,9 +27,9 @@ const Login = () => {
   };
 
   return (
-    <section className="page auth-page">
+    <section className="page">
       <h1>Login</h1>
-      <form onSubmit={handleSubmit} className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <label>
           Email
           <input
@@ -49,8 +50,8 @@ const Login = () => {
             onChange={handleChange}
           />
         </label>
-        {error && <p className="form-error">{error}</p>}
-        <button type="submit" className="btn-primary">
+        {error && <p className="error">{error}</p>}
+        <button className="btn-primary" type="submit">
           Login
         </button>
         <p>

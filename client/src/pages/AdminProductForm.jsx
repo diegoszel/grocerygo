@@ -2,39 +2,47 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import api from "../api";
 
-const emptyProduct = {
-  name: "",
-  description: "",
-  imageUrl: "",
-  price: 0,
-  category: "",
-  inStock: true,
-  stockQty: 0
-};
-
 const AdminProductForm = () => {
   const { id } = useParams();
-  const isEdit = Boolean(id);
   const navigate = useNavigate();
-  const [product, setProduct] = useState(emptyProduct);
+  const isEdit = Boolean(id);
+
+  const [form, setForm] = useState({
+    name: "",
+    description: "",
+    imageUrl: "",
+    price: "",
+    category: "",
+    inStock: true,
+    stockQty: ""
+  });
+
   const [error, setError] = useState("");
 
   useEffect(() => {
     if (!isEdit) return;
     api
       .get(`/products/${id}`)
-      .then((res) => setProduct(res.data))
+      .then((res) => {
+        const p = res.data;
+        setForm({
+          name: p.name || "",
+          description: p.description || "",
+          imageUrl: p.imageUrl || "",
+          price: p.price || "",
+          category: p.category || "",
+          inStock: p.inStock ?? true,
+          stockQty: p.stockQty ?? ""
+        });
+      })
       .catch((err) => console.error(err));
   }, [id, isEdit]);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    setProduct((p) => ({
-      ...p,
-      [name]:
-        type === "checkbox" ? checked : name === "price" || name === "stockQty"
-          ? Number(value)
-          : value
+    setForm((f) => ({
+      ...f,
+      [name]: type === "checkbox" ? checked : value
     }));
   };
 
@@ -42,10 +50,15 @@ const AdminProductForm = () => {
     e.preventDefault();
     setError("");
     try {
+      const payload = {
+        ...form,
+        price: Number(form.price),
+        stockQty: Number(form.stockQty)
+      };
       if (isEdit) {
-        await api.put(`/products/${id}`, product);
+        await api.put(`/products/${id}`, payload);
       } else {
-        await api.post("/products", product);
+        await api.post("/products", payload);
       }
       navigate("/admin");
     } catch (err) {
@@ -62,7 +75,7 @@ const AdminProductForm = () => {
           <input
             name="name"
             required
-            value={product.name}
+            value={form.name}
             onChange={handleChange}
           />
         </label>
@@ -70,8 +83,7 @@ const AdminProductForm = () => {
           Description
           <textarea
             name="description"
-            required
-            value={product.description}
+            value={form.description}
             onChange={handleChange}
           />
         </label>
@@ -79,17 +91,7 @@ const AdminProductForm = () => {
           Image URL
           <input
             name="imageUrl"
-            required
-            value={product.imageUrl}
-            onChange={handleChange}
-          />
-        </label>
-        <label>
-          Category
-          <input
-            name="category"
-            required
-            value={product.category}
+            value={form.imageUrl}
             onChange={handleChange}
           />
         </label>
@@ -98,35 +100,40 @@ const AdminProductForm = () => {
           <input
             name="price"
             type="number"
-            min="0"
             step="0.01"
             required
-            value={product.price}
+            value={form.price}
             onChange={handleChange}
           />
+        </label>
+        <label>
+          Category
+          <input
+            name="category"
+            value={form.category}
+            onChange={handleChange}
+          />
+        </label>
+        <label className="checkbox">
+          <input
+            name="inStock"
+            type="checkbox"
+            checked={form.inStock}
+            onChange={handleChange}
+          />
+          In stock
         </label>
         <label>
           Stock quantity
           <input
             name="stockQty"
             type="number"
-            min="0"
-            required
-            value={product.stockQty}
+            value={form.stockQty}
             onChange={handleChange}
           />
         </label>
-        <label className="checkbox">
-          <input
-            type="checkbox"
-            name="inStock"
-            checked={product.inStock}
-            onChange={handleChange}
-          />
-          In stock
-        </label>
-        {error && <p className="form-error">{error}</p>}
-        <button type="submit" className="btn-primary">
+        {error && <p className="error">{error}</p>}
+        <button className="btn-primary" type="submit">
           Save
         </button>
       </form>
